@@ -1,9 +1,14 @@
-import React, { ReactNode } from 'react'
+import type { Metadata } from "next";
 
-const layout = ({children} : {children: ReactNode}) => {
-  return (
-    {children}
-  )
+export const metadata: Metadata = {
+  title: "Admin",
+  description: "Admin",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return <main>{children}</main>;
 }
-
-export default layout

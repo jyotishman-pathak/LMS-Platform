@@ -4,6 +4,7 @@ import React from 'react'
 import { ModeToggle } from './ui/theme/mode-toggle'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from './ui/button';
+import SearchInput from './SearchInput';
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
@@ -22,7 +23,7 @@ const Header = () => {
               </span>
             </Link>
 
-           {/* search */}
+          <SearchInput/>
 
           </div>
           <div className="flex items-center space-x-2 md:space-x-4">
